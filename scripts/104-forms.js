@@ -13,3 +13,10 @@ function register(){
 
 alert(`${name} ${price} ${category}`);
 }
+
+// === REGISTER PRODUCT ====
+
+function registerProduct(event){
+    // Prevent refreshing the browser 
+event.preventDefault();
+}
