@@ -43,6 +43,7 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
 .logo-area{
     margin: 0;
 }
@@ -56,19 +57,27 @@ img{
     margin: 0 50px;
 }
 .book-btn{
-    
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: rgba(233, 166, 213, 0.74);
 }
 
 
 /*Main*/
+.hero-section{
+    display: flex;
+    flex-direction: row;
+}
 .register-block{
-
+    margin: 50px 30px;
+    padding: 20px;
 }
 .register-block h2{
     font-family:"DM Serif Display", serif;
 }
 
-.about-cards{
+.about-section{
+
    
 }
 .packages-section{
