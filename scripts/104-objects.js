@@ -41,6 +41,6 @@ console.log(student1.lastname);
 console.log(student2.isStudent);
 
 // INTERPILATION
-
-console.log(``);
+// Hello, my name is _______, and I am ______ years old
+console.log(`Hello, my name is ${student1}`);
 
