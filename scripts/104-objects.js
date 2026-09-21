@@ -44,3 +44,38 @@ console.log(student2.isStudent);
 // Hello, my name is _______, and I am ______ years old
 console.log(`Hello, my name is ${student1}`);
 
+// Display the interpoliation sentence in the paragraph 
+let p = document.getElementById("paragraph");
+
+p.innerHTML = `Hello, my name is ${student1.name}, and I am ${student1.age} years old.`;
+
+/*Exercise 1 - Product Objects
+
+Create 3 different object literals to represent products. 
+
+Each object should have the same properties (at least 4). 
+
+User interpolation to display the information of each product. Use different sentences for each product.
+*/
+
+let product1 = {
+    name: "Monitor",
+    brand: "Dell", 
+    price: 96.99, 
+    inStock: true
+};
+let product2 = {
+    name: "Keyboard",
+    brand: "LogiTech", 
+    price: 104.99, 
+    inStock: true
+};
+let product3 = {
+    name: "Mouse",
+    brand: "Apple", 
+    price: 75.99, 
+    inStock: false
+};
+
+console.log(`I just bought a new ${product1.brand} ${product1.name} for ${product1.price}`); 
+
