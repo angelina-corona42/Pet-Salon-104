@@ -22,7 +22,7 @@ let student1 = {
 let student2 = {
     name:"Ashlie", 
     lastname: "Rodriguez", 
-    age: 28, 
+    age: 27, 
     isStudent: false
 };
 
@@ -79,3 +79,13 @@ let product3 = {
 
 console.log(`I just bought a new ${product1.brand} ${product1.name} for ${product1.price}`); 
 
+// ==== OBJECT CONSTRUCTOR ====
+function Student(name, lastname, age, isStudent){
+    this.name = name;
+    this.lastname = lastname;
+    this.age = age;
+    this.isStudent = isStudent; 
+}
+
+let student = new Student("Angelina", "Corona", 25, true);
+console.log(student);

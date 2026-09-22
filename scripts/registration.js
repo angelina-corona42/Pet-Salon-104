@@ -28,3 +28,20 @@ function displayPets(){
 }
 
 displayPets();
+
+function Pet(name, age, gender, service, breed){
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.service = service;
+    this.breed = breed;
+}
+
+let pet4 = new Pet("Olive", 10, "Female", "Paw Trim / Bath", "Golden Retriever");
+console.log(pet4);
+
+let pet5 = new Pet("Jackson", 2, "Male", "Basic Bath", "Boxer Mix");
+console.log(pet5);
+
+let pet6 = new Pet("Bently", 6, "Male", "Haircut & Premium Bath", "Wolf Dog Mix");
+console.log(pet6);
