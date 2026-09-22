@@ -45,3 +45,12 @@ console.log(pet5);
 
 let pet6 = new Pet("Bently", 6, "Male", "Haircut & Premium Bath", "Wolf Dog Mix");
 console.log(pet6);
+
+function displayRow(){
+    let tableBody = document.getElementById("tablePets");
+    tableBody.innerHTML = ``;
+
+    tableBody.innerHTML += `<td>${pet1.name}</td><td>${pet1.age}</td><td>${pet1.gender}</td><td>${pet1.service}</td><td>${pet1.breed}</td>`; 
+
+}
+
