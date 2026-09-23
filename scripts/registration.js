@@ -50,7 +50,11 @@ function displayRow(){
     let tableBody = document.getElementById("tablePets");
     tableBody.innerHTML = ``;
 
-    tableBody.innerHTML += `<td>${pet1.name}</td><td>${pet1.age}</td><td>${pet1.gender}</td><td>${pet1.service}</td><td>${pet1.breed}</td>`; 
+    tableBody.innerHTML += `<tr><td>${pet1.name}</td><td>${pet1.age}</td><td>${pet1.gender}</td><td>${pet1.service}</td><td>${pet1.breed}</td></tr>`; 
 
+    tableBody.innerHTML += `<tr><td>${pet2.name}</td><td>${pet2.age}</td><td>${pet2.gender}</td><td>${pet2.service}</td><td>${pet2.breed}</td></tr>`; 
+
+    tableBody.innerHTML += `<tr><td>${pet3.name}</td><td>${pet3.age}</td><td>${pet3.gender}</td><td>${pet3.service}</td><td>${pet3.breed}</td></tr>`; 
 }
 
+displayRow();
