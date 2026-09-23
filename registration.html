@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/registration.css">
-    
 
     <title>Registration | Fluff & Buff</title>
 </head>
@@ -30,168 +36,151 @@
 
     <main>
 
+        <!-- PET REGISTRATION FORM -->
         <section class="registration-section">
 
-            <h1>Book an Appointment</h1>
+            <h1>Pet Registration</h1>
 
             <p>
-                Fill out the form below to request a grooming appointment.
+                Register your pet below so we can provide the best grooming
+                experience for them.
             </p>
 
-            <p>
-                We will confirm your date and time shortly.
-            </p>
-
-            <form>
+            <form class="bg-light p-4 m-3 border rounded">
 
                 <fieldset>
 
-                    <legend>Pet & Appointment Information</legend>
+                    <legend>Pet Information</legend>
 
-                    <div class="form-row">
+                    <div class="form-group mb-3">
+                        <label for="pname" class="form-label">Pet Name</label>
+                        <input
+                            type="text"
+                            id="pname"
+                            name="pname"
+                            class="form-control"
+                            required
+                            placeholder="Pet Name"
+                        >
+                    </div>
 
-                        <div class="form-group">
-                            <label for="pname">Pet's Name</label>
-                            <input
-                                type="text"
-                                id="pname"
-                                name="pname"
-                                required
-                                placeholder="Pet's Name"
-                            >
-                        </div>
+                    <div class="form-group mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            class="form-control"
+                            required
+                            placeholder="Age"
+                        >
+                    </div>
 
-                        <div class="form-group">
-                            <label for="ptype">Pet Type</label>
-                            <input
-                                type="text"
-                                id="ptype"
-                                name="ptype"
-                                required
-                                placeholder="Pet Type"
-                            >
-                        </div>
+                    <div class="form-group mb-3">
+                        <label for="breed" class="form-label">Breed</label>
+                        <input
+                            type="text"
+                            id="breed"
+                            name="breed"
+                            class="form-control"
+                            required
+                            placeholder="Breed"
+                        >
+                    </div>
 
-                        <div class="form-group">
-                            <label for="oname">Owner's Name</label>
-                            <input
-                                type="text"
-                                id="oname"
-                                name="oname"
-                                required
-                                placeholder="Owner's Name"
-                            >
-                        </div>
+                    <div class="form-group mb-3">
+                        <label for="gender" class="form-label">Gender</label>
 
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                required
-                                placeholder="(555) 555-5555"
-                            >
-                        </div>
+                        <select
+                            id="gender"
+                            name="gender"
+                            class="form-select"
+                            required
+                        >
+                            <option value="">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                                placeholder="Email Address"
-                            >
-                        </div>
+                    <div class="form-group mb-3">
+                        <label for="service" class="form-label">Service</label>
 
-                        <div class="form-group">
-                            <label for="date">Preferred Date</label>
-                            <input
-                                type="date"
-                                id="date"
-                                name="date"
-                                required
-                            >
-                        </div>
+                        <select
+                            id="service"
+                            name="service"
+                            class="form-select"
+                            required
+                        >
+                            <option value="">Select service</option>
+                            <option value="Basic Bath">Basic Bath</option>
+                            <option value="Deluxe Groom">Deluxe Groom</option>
+                            <option value="Premium Pamper">Premium Pamper</option>
+                            <option value="Nail Trim">Nail Trim</option>
+                            <option value="Ear Cleaning">Ear Cleaning</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="time">Preferred Time</label>
-                            <input
-                                type="time"
-                                id="time"
-                                name="time"
-                                required
-                            >
-                        </div>
+                    <div class="d-flex justify-content-end gap-3">
 
-                        <div class="form-group">
-                            <label for="notes">Additional Notes</label>
-                            <textarea
-                                id="notes"
-                                name="notes"
-                                placeholder="Anything we should know about your pet?"
-                            ></textarea>
-                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Register
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn btn-secondary"
+                        >
+                            Reset
+                        </button>
 
                     </div>
 
                 </fieldset>
 
-                <button type="submit" class="submit-btn">
-                    Submit Request
-                </button>
-
             </form>
 
         </section>
-        <section>
+
+
+        <!-- ASSIGNMENT 1 -->
+        <section class="registered-pets-section">
+
             <h2>Registered Pets</h2>
+
             <div>
-                <ol id="petList">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
+                <ol id="petList"></ol>
             </div>
-                <table class="table table-striped-columns table-hover">
-                    <th>Name</th> 
-                    <th>Age</th>  
-                    <th>Gender</th>  
-                    <th>Service</th>  
-                    <th>Breed</th>
-                        <tbody id="tablePets">
-                                
 
 
+            <!-- ASSIGNMENT 3 TABLE -->
+            <table class="table table-striped table-hover">
 
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Service</th>
+                        <th>Breed</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
 
+                <tbody id="tablePets">
 
+                </tbody>
 
+            </table>
 
-                            
-                        </tbody>
-                </table>
-               
         </section>
 
-        
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <footer>
 
         <p>
@@ -209,6 +198,8 @@
         </div>
 
     </footer>
-<script src="/scripts/registration.js"></script>
+
+    <script src="scripts/registration.js"></script>
+
 </body>
 </html>
