@@ -46,22 +46,21 @@ console.log(pet5);
 let pet6 = new Pet("Bently", 6, "Male", "Haircut & Premium Bath", "Wolf Dog Mix");
 console.log(pet6);
 
+let pets = [pet1, pet2, pet3, pet4, pet5, pet6];
+
 function displayRow(){
     let tableBody = document.getElementById("tablePets");
     tableBody.innerHTML = ``;
 
-    let pets = [pet1, pet2, pet3, pet4, pet5, pet6]; 
-
     for(let i = 0; i < pets.length; i++){
         tableBody.innerHTML += `
-        
-        <tr>
-            <td>${pets[i].name}</td>
-            <td>${pets[i].age}</td>
-            <td>${pets[i].gender}</td>
-            <td>${pets[i].service}</td>
-            <td>${pets[i].breed}</td>
-        </tr>    
+            <tr>
+                <td>${pets[i].name}</td>
+                <td>${pets[i].age}</td>
+                <td>${pets[i].gender}</td>
+                <td>${pets[i].service}</td>
+                <td>${pets[i].breed}</td>
+            </tr>
         `;
     }
 }
