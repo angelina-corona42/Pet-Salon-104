@@ -60,9 +60,46 @@ function displayRow(){
                 <td>${pets[i].gender}</td>
                 <td>${pets[i].service}</td>
                 <td>${pets[i].breed}</td>
+                <td>
+                    <button
+                        class="btn btn-danger"
+                        onclick="deletePet(${i})">
+                        Delete
+                    </button>
+                </td>
             </tr>
         `;
     }
+}
+
+displayRow();
+
+function registerPet(event){
+    event.preventDefault();
+
+    // Get values from the form
+    let name = document.getElementById("pname").value;
+    let age = Number(document.getElementById("age").value);
+    let breed = document.getElementById("breed").value;
+    let gender = document.getElementById("gender").value;
+    let service = document.getElementById("service").value;
+
+    // Create a new pet using the constructor
+    let newPet = new Pet(name, age, gender, service, breed);
+
+    // Add the new pet to the array
+    pets.push(newPet);
+
+    // Refresh the table
+    displayRow();
+
+    // Clear the form
+    event.target.form.reset();
+}
+
+function deletePet(index){
+    pets.splice(index, 1);
+    displayRow();
 }
 
 displayRow();
