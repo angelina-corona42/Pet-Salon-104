@@ -3,63 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
     <title>Fluff & Buff</title>
 </head>
+
 <body>
-    <header class="site-header"> 
-     <div class="logo-area">
-         <h2 class="logo">Fluff & Buff</h2>
-         <p class="tagline">Pet Salon</p>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h2 class="logo">Fluff & Buff</h2>
+        <p class="tagline">Pet Salon</p>
     </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="registration.html">Registration</a>
         <a href="registration.html" class="book-btn">Book Now!</a>
+        <button id="changeMode">☀️</button>
     </nav>
-    </header>
+</header>
+
 <main class="container">
+
     <section class="hero-section">
         <div class="register-block">
-            <h1>Happy Pets Happy Life</h1> 
-              <p>Professional grooming, loving care, and a tail-wagging experience</p>
-                <a href="registration.html">Register Your Pet</a>
-                <div class="main-topics">
+            <h1>Happy Pets Happy Life</h1>
+            <p>Professional grooming, loving care, and a tail-wagging experience</p>
+            <a href="registration.html">Register Your Pet</a>
+
+            <div class="main-topics">
                 <p>Clean Pets</p>
                 <p>Healthy Pets</p>
                 <p>Happy Homes</p>
-                </div>
             </div>
-            <img src="images/Koda.jpg" alt="Dog sitting and smiling" class="top-dog">
-        </section>
+        </div>
+
+        <img src="images/Koda.jpg" alt="Dog sitting and smiling" class="top-dog">
+    </section>
 
     <section class="about-section">
         <div class="about-card">
-        <h2>Why Are We Different?</h2>
-        <p id="infoParagraph"></p>
-        
-            <p>Fluff & Buff was created from a simple love for animals and the belief that every pet deserved to feel clean, comfortable, and loved. We provide gentle, professional grooming in a calm and welcoming environment, treating every pet like family. Our goal is to help your furry friends look their best while feeling safe, happy, and cared for. </p>
+            <h2>Why Are We Different?</h2>
+            <p id="infoParagraph"></p>
+
+            <p>
+                Fluff & Buff was created from a simple love for animals and the belief
+                that every pet deserved to feel clean, comfortable, and loved. We provide
+                gentle, professional grooming in a calm and welcoming environment,
+                treating every pet like family. Our goal is to help your furry friends
+                look their best while feeling safe, happy, and cared for.
+            </p>
         </div>
-        <img src="images/Kenai.jpg" class="mid-dog">
-        </section>
+
+        <img src="images/Kenai.jpg" alt="Dog relaxing at Fluff and Buff" class="mid-dog">
+    </section>
 
     <div class="package-grid">
         <section class="packages-section">
-            <!--Look at image for ref and fix the styling-->
-         <h2>Available Packages</h2>
+            <h2>Available Packages</h2>
             <p>Tailored Care for Every Kind of Pup</p>
             <p>Simple, convenient packages to keep your pet looking and feeling their best</p>
-        
-        <div class="package-cards">
+
+            <div class="package-cards">
+
                 <div class="package-card">
-                 <h3>Basic Bath</h3>
+                    <h3>Basic Bath</h3>
                     <p>A refreshing bath, coat brush, blow dry, and nail trim</p>
-                    <p>$35 + </p>
+                    <p>$35 +</p>
                     <a class="learn-btn" href="services.html">Learn More!</a>
                     <img>
                 </div>
@@ -67,39 +89,47 @@
                 <div class="package-card">
                     <h3>Deluxe Groom</h3>
                     <p>Includes bath, haircut, nail trim, ear cleaning, and finishing spritz</p>
-                    <p>$55 + </p>
-                    <a class="learn-btn" href="services.html">Learn More! <!--Add Arrow--></a>
+                    <p>$55 +</p>
+                    <a class="learn-btn" href="services.html">Learn More!</a>
                     <img>
                 </div>
 
                 <div class="package-card">
                     <h3>Premium Pamper</h3>
                     <p>Full groom with premium products, nail trim, ear cleaning, and a paw treatment</p>
-                    <p>$75 + </p>
-                    <a class="learn-btn" href="services.html">Learn More! <!--Add Arrow--></a>
+                    <p>$75 +</p>
+                    <a class="learn-btn" href="services.html">Learn More!</a>
                     <img>
                 </div>
-            </div>
-    </section>
-    </div>
 
-        <section class="service-cta">
-            <div>
-                <h2>Looking for just one service?</h2>
-                <p>View our individual services and pricing</p>
-             <a href="services.html">View Services & Pricing</a> <!--Add Arrow-->
             </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Fluff & Buff Pet Salon. All rights reserved.</p>
-        <div class="footer-links">
-            <p class="logo-footer">Fluff & Buff</p>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="registration.html">Registration</a>
+    </div>
+
+    <section class="service-cta">
+        <div>
+            <h2>Looking for just one service?</h2>
+            <p>View our individual services and pricing</p>
+            <a href="services.html">View Services & Pricing</a>
         </div>
-    </footer>
-    <script src="/scripts/salon.js"></script>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Fluff & Buff Pet Salon. All rights reserved.</p>
+
+    <div class="footer-links">
+        <p class="logo-footer">Fluff & Buff</p>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="registration.html">Registration</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="scripts/salon.js"></script>
+<script src="scripts/index.js"></script>
+
 </body>
 </html>

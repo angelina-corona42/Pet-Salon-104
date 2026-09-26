@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/registration.css">
 
     <title>Registration | Fluff & Buff</title>
@@ -18,188 +12,152 @@
 
 <body>
 
-    <header class="site-header">
+<header class="site-header">
+    <div class="logo-area">
+        <h2 class="logo">Fluff & Buff</h2>
+        <p class="tagline">Pet Salon</p>
+    </div>
 
-        <div class="logo-area">
-            <h2 class="logo">Fluff & Buff</h2>
-            <p class="tagline">Pet Salon</p>
-        </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="registration.html">Registration</a>
+        <a href="registration.html" class="book-btn">Book Now!</a>
+        <button id="changeMode">☀️</button>
+    </nav>
+</header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="registration.html">Registration</a>
-            <a href="registration.html" class="book-btn">Book Now!</a>
-        </nav>
+<main>
 
-    </header>
-
-    <main>
-
-        <!-- PET REGISTRATION FORM -->
-        <section class="registration-section">
-
-            <h1>Pet Registration</h1>
-
-            <p>
-                Register your pet below so we can provide the best grooming
-                experience for them.
-            </p>
-
-            <form class="bg-light p-4 m-3 border rounded">
-
-                <fieldset>
-
-                    <legend>Pet Information</legend>
-
-                    <div class="form-group mb-3">
-                        <label for="pname" class="form-label">Pet Name</label>
-                        <input
-                            type="text"
-                            id="pname"
-                            name="pname"
-                            class="form-control"
-                            required
-                            placeholder="Pet Name"
-                        >
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="age" class="form-label">Age</label>
-                        <input
-                            type="number"
-                            id="age"
-                            name="age"
-                            class="form-control"
-                            required
-                            placeholder="Age"
-                        >
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="breed" class="form-label">Breed</label>
-                        <input
-                            type="text"
-                            id="breed"
-                            name="breed"
-                            class="form-control"
-                            required
-                            placeholder="Breed"
-                        >
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="gender" class="form-label">Gender</label>
-
-                        <select
-                            id="gender"
-                            name="gender"
-                            class="form-select"
-                            required
-                        >
-                            <option value="">Select gender</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="service" class="form-label">Service</label>
-
-                        <select
-                            id="service"
-                            name="service"
-                            class="form-select"
-                            required
-                        >
-                            <option value="">Select service</option>
-                            <option value="Basic Bath">Basic Bath</option>
-                            <option value="Deluxe Groom">Deluxe Groom</option>
-                            <option value="Premium Pamper">Premium Pamper</option>
-                            <option value="Nail Trim">Nail Trim</option>
-                            <option value="Ear Cleaning">Ear Cleaning</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex justify-content-end gap-3">
-
-                        <button onclick="registerPet(event)"
-                            type="submit"
-                            class="btn btn-primary"
-                        >
-                            Register
-                        </button>
-
-                        <button
-                            type="reset"
-                            class="btn btn-secondary"
-                        >
-                            Reset
-                        </button>
-
-                    </div>
-
-                </fieldset>
-
-            </form>
-
-        </section>
-
-
-        <!-- ASSIGNMENT 1 -->
-        <section class="registered-pets-section">
-
-            <h2>Registered Pets</h2>
-
-            <div>
-                <ol id="petList"></ol>
-            </div>
-
-
-            <!-- ASSIGNMENT 3 TABLE -->
-            <table class="table table-striped table-hover">
-
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Service</th>
-                        <th>Breed</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-
-                <tbody id="tablePets">
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-    </main>
-
-
-    <footer>
+    <section class="registration-section">
+        <h1>Pet Registration</h1>
 
         <p>
-            &copy; 2026 Fluff & Buff Pet Salon. All rights reserved.
+            Register your pet below so we can provide the best grooming
+            experience for them.
         </p>
 
-        <div class="footer-links">
+        <form class="bg-light p-4 m-3 border rounded">
+            <fieldset>
 
-            <p class="logo-footer">Fluff & Buff</p>
+                <legend>Pet Information</legend>
 
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="registration.html">Registration</a>
+                <div class="form-group mb-3">
+                    <label for="pname" class="form-label">Pet Name</label>
+                    <input
+                        type="text"
+                        id="pname"
+                        name="pname"
+                        class="form-control"
+                        required
+                        placeholder="Pet Name"
+                    >
+                </div>
 
+                <div class="form-group mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        class="form-control"
+                        required
+                        placeholder="Age"
+                    >
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="breed" class="form-label">Breed</label>
+                    <input
+                        type="text"
+                        id="breed"
+                        name="breed"
+                        class="form-control"
+                        required
+                        placeholder="Breed"
+                    >
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select id="gender" name="gender" class="form-select" required>
+                        <option value="">Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="service" class="form-label">Service</label>
+                    <select id="service" name="service" class="form-select" required>
+                        <option value="">Select service</option>
+                        <option value="Basic Bath">Basic Bath</option>
+                        <option value="Deluxe Groom">Deluxe Groom</option>
+                        <option value="Premium Pamper">Premium Pamper</option>
+                        <option value="Nail Trim">Nail Trim</option>
+                        <option value="Ear Cleaning">Ear Cleaning</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+                    <button
+                        onclick="registerPet(event)"
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Register
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary"
+                    >
+                        Reset
+                    </button>
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="registered-pets-section">
+        <h2>Registered Pets</h2>
+
+        <div>
+            <ol id="petList"></ol>
         </div>
 
-    </footer>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Service</th>
+                    <th>Breed</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
 
-    <script src="scripts/registration.js"></script>
+            <tbody id="tablePets"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Fluff & Buff Pet Salon. All rights reserved.</p>
+
+    <div class="footer-links">
+        <p class="logo-footer">Fluff & Buff</p>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="registration.html">Registration</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="scripts/registration.js"></script>
 
 </body>
 </html>

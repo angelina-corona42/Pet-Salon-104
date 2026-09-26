@@ -3,155 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/services.css">
 
-    <title>Services</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/services.css">
+
+    <title>Services | Fluff & Buff</title>
 </head>
-<body> 
-      <header class="site-header"> 
-     <div class="logo-area">
-         <h2 class="logo">Fluff & Buff</h2>
-         <p class="tagline">Pet Salon</p>
+
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h2 class="logo">Fluff & Buff</h2>
+        <p class="tagline">Pet Salon</p>
     </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="registration.html">Registration</a>
         <a href="registration.html" class="book-btn">Book Now!</a>
+        <button id="changeMode">☀️</button>
     </nav>
-    </header>
-    <main>
-        <div class="service-overview">
-         <h1>Our Services</h1>
-         <p class="tagline">Tailored grooming services to keep your pet looking and feeling their best</p>
+</header>
+
+<main>
+
+    <div class="service-overview">
+        <h1>Our Services</h1>
+        <p class="tagline">
+            Tailored grooming services to keep your pet looking and feeling their best
+        </p>
     </div>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Bath & Brush</h3>
-                <p>A refreshing bath, coat, brush, and blow dry</p>
 
-            </div>
-            <div class="service-card">
-                <h3>Haircut</h3>
-                <p>Customized cuts to match your pet's style and needs</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Nail Trim</h3>
-                <p>Safe and gentle nail trimming for happy paws</p>
-            </div>
-            <div class="service-card">
-                <h3>Add-On</h3>
-                <p>Dental Cleaning, ear cleaning, and more</p>
-            </div>
+    <div class="service-grid">
+        <div class="service-card">
+            <h3>Bath & Brush</h3>
+            <p>A refreshing bath, coat brush, and blow dry</p>
         </div>
 
-        <section class="grooming-grid">
-            <h2>Grooming Packages</h2>
-            <p>Choose the perfect package for your pet's needs</p>
-               <div class="package-cards">
-                <div class="package-card">
-                 <h3>Basic Bath</h3>
-                    <p>A refreshing bath, coat brush, blow dry, and nail trim</p>
-                    <p>$35 + </p>
-                    <a class="learn-btn" href="registration.html">Book Now!</a>
-                    <img>
-                </div>
+        <div class="service-card">
+            <h3>Haircut</h3>
+            <p>Customized cuts to match your pet's style and needs</p>
+        </div>
 
-                <div class="package-card">
-                    <h3>Deluxe Groom</h3>
-                    <p>Includes bath, haircut, nail trim, ear cleaning, and finishing spritz</p>
-                    <p>$55 + </p>
-                    <a class="learn-btn" href="registration.html">Book Now! <!--Add Arrow--></a>
-                    <img>
-                </div>
+        <div class="service-card">
+            <h3>Nail Trim</h3>
+            <p>Safe and gentle nail trimming for happy paws</p>
+        </div>
 
-                <div class="package-card">
-                    <h3>Premium Pamper</h3>
-                    <p>Full groom with premium products, nail trim, ear cleaning, and a paw treatment</p>
-                    <p>$75 + </p>
-                    <a class="learn-btn" href="registration.html">Book Now! <!--Add Arrow--></a>
-                    <img>
-                </div>
-            </div>     
-        </section>
+        <div class="service-card">
+            <h3>Add-On</h3>
+            <p>Dental cleaning, ear cleaning, and more</p>
+        </div>
+    </div>
 
-        <section class="addon-grid">
-            <h2>Additional Services</h2>
-            <p>Enhance your pet's grooming experience</p>
-            <div class="addon-list">
-                <p>Nail Grinding</p>
-                <p>$15</p>
-            </div>
-            <div class="addon-list">
-                <p>Ear Cleaning</p>
-                <p>$15</p>
-            </div>
-            <div class="addon-list">
-                <p>Dental Cleaning</p>
-                <p>$15</p>
-            </div>
-            <div class="addon-list">
-                <p>De-shedding Treatment</p>
-                <p>$15</p>
-            </div>
-            <div class="addon-list">
-                <p>Flea & Tick Bath</p>
-                <p>$20+</p>
-            </div>
-            <div class="addon-list">
-                <p>Medicated Bath</p>
-                <p>$20+</p>
-            </div>
-            <div class="addon-list">
-                <p>Anal Gland Expression</p>
-                <p>$15</p>
-            </div>
-            <div class="addon-list">
-                <p>Paw Treatment</p>
-                <p>$10</p>
-            </div>
-        </section>  
+    <section class="grooming-grid">
+        <h2>Grooming Packages</h2>
+        <p>Choose the perfect package for your pet's needs</p>
 
-       <section class="m-5">
+        <div class="package-cards">
+
+            <div class="package-card">
+                <h3>Basic Bath</h3>
+                <p>A refreshing bath, coat brush, blow dry, and nail trim</p>
+                <p>$35 +</p>
+                <a class="learn-btn" href="registration.html">Book Now!</a>
+                <img>
+            </div>
+
+            <div class="package-card">
+                <h3>Deluxe Groom</h3>
+                <p>Includes bath, haircut, nail trim, ear cleaning, and finishing spritz</p>
+                <p>$55 +</p>
+                <a class="learn-btn" href="registration.html">Book Now!</a>
+                <img>
+            </div>
+
+            <div class="package-card">
+                <h3>Premium Pamper</h3>
+                <p>Full groom with premium products, nail trim, ear cleaning, and a paw treatment</p>
+                <p>$75 +</p>
+                <a class="learn-btn" href="registration.html">Book Now!</a>
+                <img>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="addon-grid">
+        <h2>Additional Services</h2>
+        <p>Enhance your pet's grooming experience</p>
+
+        <div class="addon-list">
+            <p>Nail Grinding</p>
+            <p>$15</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Ear Cleaning</p>
+            <p>$15</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Dental Cleaning</p>
+            <p>$15</p>
+        </div>
+
+        <div class="addon-list">
+            <p>De-shedding Treatment</p>
+            <p>$15</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Flea & Tick Bath</p>
+            <p>$20+</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Medicated Bath</p>
+            <p>$20+</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Anal Gland Expression</p>
+            <p>$15</p>
+        </div>
+
+        <div class="addon-list">
+            <p>Paw Treatment</p>
+            <p>$10</p>
+        </div>
+    </section>
+
+    <section class="m-5">
         <form class="bg-light p-4 border rounded">
+
             <div class="m-3">
-                <label class="form-label">Service</label>
-                <input id="serviceName" class="form-control" type="text" placeholder="Premium Bath">
+                <label for="serviceName" class="form-label">Service</label>
+                <input
+                    id="serviceName"
+                    class="form-control"
+                    type="text"
+                    placeholder="Premium Bath"
+                >
             </div>
+
             <div class="m-3">
-                <label class="form-label">Description</label>
-                <input id="serviceDescription" class="form-control" type="text" placeholder="Includes...">
+                <label for="serviceDescription" class="form-label">Description</label>
+                <input
+                    id="serviceDescription"
+                    class="form-control"
+                    type="text"
+                    placeholder="Includes..."
+                >
             </div>
+
             <div class="m-3">
-                <label class="form-label">Price</label>
-                <input id="servicePrice" class="form-control" type="number" step="any" placeholder="10.99">
+                <label for="servicePrice" class="form-label">Price</label>
+                <input
+                    id="servicePrice"
+                    class="form-control"
+                    type="number"
+                    step="any"
+                    placeholder="10.99"
+                >
             </div>
+
             <div class="d-flex justify-content-end gap-3">
-                <button id="registerBtn" class="btn btn-primary" type="submit">Register</button>
-                <button type="reset" id="resetBtn" class="btn btn-secondary">Reset</button>
+                <button id="registerBtn" class="btn btn-primary" type="submit">
+                    Register
+                </button>
+
+                <button id="resetBtn" class="btn btn-secondary" type="reset">
+                    Reset
+                </button>
             </div>
+
         </form>
     </section>
-    </main>
 
-   <footer>
-        <p>&copy; 2026 Fluff & Buff Pet Salon. All rights reserved.</p>
-        <div class="footer-links">
-            <p class="logo-footer">Fluff & Buff</p>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="registration.html">Registration</a>
-        </div>
-    </footer>
+</main>
 
-<!-- Jquery / JavaScript -->
-    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+<footer>
+    <p>&copy; 2026 Fluff & Buff Pet Salon. All rights reserved.</p>
 
-    <script src="/scripts/services.js"></script>
+    <div class="footer-links">
+        <p class="logo-footer">Fluff & Buff</p>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="registration.html">Registration</a>
+    </div>
+</footer>
 
-<!-- BootStrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Services JavaScript -->
+<script src="scripts/services.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

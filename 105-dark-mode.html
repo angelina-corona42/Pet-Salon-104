@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/dark-mode.css">
+    <title>Resume</title>
 </head>
 <body>
-    
+    <section class="center">
+
+        <!--I. Title & Change Mode Button-->
+        <div class="center">
+            <h1>☀️ Light Mode</h1>
+            <button id="changeMode">Change Mode</button>
+        </div>
+
+        <!--II. Image & Download Resume Button-->
+        <div class="center">
+            <div class="image-container"> 
+                <img src="/images/guy.jpg" alt="">
+            </div>
+            <a href="./files/resume.pdf" download>Downlaod Resume</a>
+        </div>
+        
+        <!-- III. Description & KNow More Button-->
+        <div id="descriptionContainer">
+            <h2>James Louis</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro facere quis cumque nihil laboriosam quo magnam explicabo optio adipisci voluptatibus assumenda a praesentium, totam eligendi, reiciendis temporibus illo aut?</p>
+            <button>Know More</button>
+
+        </div>
 
 
 
-    
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="/scripts/105-dark-mode.js"></script>
 </body>
 </html>

@@ -103,3 +103,11 @@ function deletePet(index){
 }
 
 displayRow();
+
+$("#changeMode").click(function(){
+    $("body").toggleClass("dark-mode");
+
+    const isDark = $("body").hasClass("dark-mode");
+
+    $("#changeMode").text(isDark ? "🌓" : "☀️");
+});

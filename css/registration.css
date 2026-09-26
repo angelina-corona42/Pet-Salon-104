@@ -9,13 +9,33 @@
     --white: #ffffff;
     --text: #374151;
     --border: #e5e7eb;
+
+    /* LIGHT MODE */
+    --background-color: #fffaf6;
+    --surface-color: #ffffff;
+    --mode-text-color: #172554;
+    --accent-color: #e7a9c1;
+    --secondary-color: #dcecf7;
+}
+
+/* =========================
+DARK MODE
+========================= */
+
+.dark-mode{
+    --background-color: #1a2744;
+    --surface-color: #23345a;
+    --mode-text-color: #fffaf6;
+    --accent-color: #e7a9c1;
+    --secondary-color: #30446f;
 }
 
 body{
     margin: 0;
-    background-color: var(--cream);
+    background-color: var(--background-color);
     color: var(--text);
     font-family: "Poppins", sans-serif;
+    transition: background-color ease 0.8s;
 }
 
 a{
@@ -24,7 +44,7 @@ a{
 
 
 /* =========================
-   HEADER
+HEADER
 ========================= */
 
 .site-header{
@@ -34,6 +54,7 @@ a{
     align-items: center;
     padding: 22px 70px;
     border-bottom: 1px solid var(--border);
+    transition: background-color ease 0.8s;
 }
 
 .logo-area{
@@ -79,7 +100,27 @@ nav a:hover{
 
 
 /* =========================
-   MAIN
+DARK MODE BUTTON
+========================= */
+
+#changeMode{
+    background-color: var(--surface-color);
+    color: var(--mode-text-color);
+    border: 2px solid var(--accent-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+}
+
+#changeMode:hover{
+    opacity: 0.5;
+}
+
+
+/* =========================
+MAIN
 ========================= */
 
 main{
@@ -109,7 +150,7 @@ main{
 
 
 /* =========================
-   FORM
+FORM
 ========================= */
 
 .registration-section form{
@@ -119,6 +160,7 @@ main{
     padding: 40px !important;
     margin: 35px auto !important;
     box-shadow: 0 12px 35px rgba(23, 37, 84, .08);
+    transition: background-color ease 0.8s;
 }
 
 fieldset{
@@ -179,7 +221,7 @@ legend{
 
 
 /* =========================
-   REGISTERED PETS
+REGISTERED PETS
 ========================= */
 
 .registered-pets-section{
@@ -202,6 +244,7 @@ legend{
     background-color: var(--blue);
     border-radius: 18px;
     padding: 25px 25px 25px 55px;
+    transition: background-color ease 0.8s;
 }
 
 #petList li{
@@ -211,7 +254,7 @@ legend{
 
 
 /* =========================
-   TABLE
+TABLE
 ========================= */
 
 .table{
@@ -250,7 +293,7 @@ legend{
 
 
 /* =========================
-   FOOTER
+FOOTER
 ========================= */
 
 footer{
@@ -285,7 +328,55 @@ footer{
 
 
 /* =========================
-   RESPONSIVE
+DARK MODE STYLING
+========================= */
+
+.dark-mode .site-header,
+.dark-mode .registration-section form,
+.dark-mode .table{
+    background-color: var(--surface-color) !important;
+}
+
+.dark-mode #petList{
+    background-color: var(--secondary-color);
+}
+
+.dark-mode .logo,
+.dark-mode nav a,
+.dark-mode .registration-section h1,
+.dark-mode .registration-section > p,
+.dark-mode legend,
+.dark-mode .form-label,
+.dark-mode .registered-pets-section h2,
+.dark-mode #petList li{
+    color: var(--mode-text-color);
+}
+
+
+/* Form inputs in dark mode */
+
+.dark-mode .form-control,
+.dark-mode .form-select{
+    background-color: var(--surface-color);
+    color: var(--mode-text-color);
+    border-color: var(--accent-color);
+}
+
+
+/* Table rows in dark mode */
+
+.dark-mode .table tbody td{
+    background-color: var(--surface-color);
+    color: var(--mode-text-color);
+}
+
+.dark-mode .table tbody tr:hover td{
+    background-color: var(--secondary-color);
+}
+
+
+/* =========================
+RESPONSIVE
 ========================= */
 
 @media(max-width: 900px){
@@ -305,6 +396,7 @@ footer{
         padding: 50px 25px;
     }
 }
+
 
 @media(max-width: 600px){
 
