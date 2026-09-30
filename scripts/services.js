@@ -1,3 +1,9 @@
+function Service(name, description, price){
+    this.name = name;
+    this.description = description;
+    this.price = price;
+}
+
 $("#registerBtn").click(function(event){
     event.preventDefault();
 
@@ -29,14 +35,20 @@ $("#registerBtn").click(function(event){
         hasError = true;
     }
 
-    // 3. Register service only if everything is filled in
+    // 3. Register only if everything is filled in
     if(hasError === false){
 
+        // Create Service object
         let newService = new Service(
             service,
             description,
             price
         );
+
+        // Save to local storage
+        localStorage.setItem("ServiceName", service);
+        localStorage.setItem("ServiceDescription", description);
+        localStorage.setItem("ServicePrice", price);
 
         // Clear the form
         $("#serviceName").val("");
